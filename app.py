@@ -29,5 +29,5 @@ stream = client.chat.completions.create(
         temperature=0,
         #stream=True,
     )
-#with st.chat_message("assistant"):
-#   response = st.write_stream(stream)
+with st.chat_message("assistant"):
+   response = st.write_stream(stream)

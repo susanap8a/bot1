@@ -5,7 +5,7 @@ st.balloons()
 # Show title and description.
 st.title("💬 mi app")
 st.write(
-   "Este es un chat de prueba para accesar a respuestas limitadas :smirk:. "
+   "Este es un chat de prueba del diplomado de inteligencia artificial de la UACH para accesar a respuestas limitadas :smiley:. "
    "To use this app, you need to provide an OpenAI API key, which you can get [here](https://platform.openai.com/account/api-keys). "
    "You can also learn how to build this app step by step by [following our tutorial](https://docs.streamlit.io/develop/tutorials/llms/build-conversational-apps)."
 )

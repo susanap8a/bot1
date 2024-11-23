@@ -23,15 +23,14 @@ with st.chat_message("user"):
 # Generate a response using the OpenAI API.
 
 stream = client.chat.completions.create(
-        model="gpt-4o-mini",  # O el modelo que prefieras, como "gpt-3.5-turbo-16k"
+        model="gpt-4o-mini",  
         messages=[
             {"role": "system", "content": "You are an assistant."},
             {"role": "user", "content": prompt}
         ],
         max_tokens=800,
         temperature=0,
-        #stream=True,
     )
-respuesta = stream.choices[0].message.content#.strip()
+respuesta = stream.choices[0].message.content
 with st.chat_message("assistant"):
    st.write(respuesta)

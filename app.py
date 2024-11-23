@@ -30,5 +30,5 @@ stream = client.chat.completions.create(
         #stream=True,
     )
 respuesta = stream.choices[0].message.content.strip()
-with st.chat_message("assistant"):
-   response = st.write_stream(respuesta)
+#with st.chat_message("assistant"):
+#   response = st.write_stream(respuesta)

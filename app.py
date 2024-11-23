@@ -15,7 +15,7 @@ client = OpenAI(api_key=openai_api_key)
 
 prompt = st.chat_input("What is up?")
 if prompt==None:
-   prompt=""
+   st.stop()
 
 with st.chat_message("user"):
    st.markdown(prompt)
